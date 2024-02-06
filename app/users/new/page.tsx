@@ -1,10 +1,11 @@
 import React from 'react'
+import UserTable from './UserTable'
 
 const NewUsersPage = () => {
   return (
     <div>
-      new user
-    </div>
+        <h1>Users</h1>
+<UserTable/>    </div>
   )
 }
 
