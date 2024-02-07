@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link';
 
 interface User {
     id: number;
@@ -15,8 +15,8 @@ const UserTable = async () => {
     <table className='table table-bordered'>
   <thead>
     <tr>
-        <td>Name</td>
-        <td>Email</td>
+        <td><Link href='/users?sortOrder=name'>Name</Link></td>
+        <td><Link href='/users?sortOrder=email'>Email</Link></td>
     </tr>
     
     </thead> 
@@ -24,7 +24,7 @@ const UserTable = async () => {
     {users.map((user)=><tr key={user.id}>
         <td>{user.name}</td>
         <td>{user.email}</td>
-        </tr>)}
+         </tr>)}
 
     </tbody>
     </table>
