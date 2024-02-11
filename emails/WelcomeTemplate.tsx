@@ -7,7 +7,7 @@ const WelcomeTemplate = ({name}:{name: string}) => {
           <Preview>Welcome Aboard!</Preview>
           <Body>
               <Container>
-                  <Text>Hello {name}</Text>
+                  <Text>Hello {name}!</Text>
               </Container>
           </Body>
     </Html>
